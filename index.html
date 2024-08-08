@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طراحی وب</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <span>سامانۀ جامع استانی</span>
+    </div>
+    <div class="container">
+        <div class="buttons">
+            <a href="#manage-users" class="button">مدیریت کاربران</a>
+            <a href="#login" class="button">ورود</a>
+            <a href="#change-password" class="button" id="change-password-btn">تغییر گذرواژه</a>
+            <a href="logout.html" class="button">خروج</a>
+        </div>
+        <div class="content">
+            <div class="label">پیشنهادات و انتقادات</div>
+            <textarea class="textbox" placeholder="اینجا پیام خود را بنویسید..."></textarea>
+        </div>
+    </div>
+
+    <!-- مدال تغییر گذرواژه -->
+    <div id="change-password-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                تغییر گذرواژه
+            </div>
+            <div class="modal-body">
+                <div class="label">
+                    <label for="current-password">گذرواژه جاری:</label>
+                    <input type="password" id="current-password" class="textbox">
+                </div>
+                <div class="label">
+                    <label for="new-password">گذرواژه جدید:</label>
+                    <input type="password" id="new-password" class="textbox">
+                </div>
+                <div class="label">
+                    <label for="repeat-new-password">تکرار گذرواژه جدید:</label>
+                    <input type="password" id="repeat-new-password" class="textbox">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="button">تایید</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'IranNastaliq';
+    src: url('IranNastaliq.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'IranNastaliq', serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.header {
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000FF;
+    color: #fff;
+    font-family: 'IranNastaliq', serif;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.label {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.textbox {
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+/* CSS برای مدال */
+.modal {
+    display: none; /* مخفی کردن مدال به صورت پیش‌فرض */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* پس‌زمینه نیمه‌شفاف */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px; /* حداکثر عرض مدال */
+}
+
+.modal-header, .modal-body, .modal-footer {
+    padding: 10px;
+}
+
+.modal-header {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body .label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-body .textbox {
+    margin-bottom: 15px;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+.modal-footer .button {
+    background-color: #28a745; /* رنگ دکمه تایید */
+}
+
+.modal-footer .button:hover {
+    background-color: #218838; /* تغییر رنگ دکمه تایید هنگام هاور */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
